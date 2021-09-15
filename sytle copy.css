@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#FCF5F5;
+    color:black;
+    font-weight:500;
+    display:flex;
+    min-height: 100vh;
+    min-width:100vw;
+    margin-left: 0;
+    /* background-color: rgb(250, 234, 219); */
+
+}
+
+main{
+    width: 40vw;
+    margin-right: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem; 
+    box-sizing: border-box;
+    /* background-color: rgb(211, 142, 102); */
+}
+
+main h1{
+    color:#8880fe;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Satisfy";
+}
+
+
+main .social-media a{
+    text-decoration: none;
+    /* background-color: darkcyan; */
+}
+
+main .social-media img{
+    width: 30px;
+    /* margin-top: 0.5rem; */
+    margin-left:3rem;
+    /* background-color: chartreuse; */
+}
+
+main .social-media a:first-child img{
+    margin-left:0;
+}
+
+main .alternative {
+    margin-top:1rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight:400;
+    color:rgba(2, 2, 2, 0.5);
+    position: relative;
+}
+
+main .alternative span::before,main .alternative span::after{
+    position:absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom:50%;
+    right:50px;
+    background: rgba(2, 2, 2, 0.5);
+}
+main .alternative span::after{
+    left: 50px;
+}
+
+main form {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+main form label {
+    display:flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font: size 1.1em;
+    margin-top:2rem;
+}
+
+main form input{
+    background: #272631;
+    width: 300px;
+    height:45px;
+    padding: 0 0.5rem;
+    margin-top: 0.3rem;
+    outline:none;
+    color: rgba(207,207,207);
+    font-size:1rem;
+    border: 1px solid #040B18;
+    border-radius:16px;
+}
+
+main form input[type="submit"] {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    cursor:pointer;
+    width:100%;
+    margin-top:1rem;
+    border:none;
+    border-radius:16px;
+    background:#6C63FF;
+    color:white;
+    font-size:1.1rem;
+    transition: all .3s ease-in-out;
+    /* background-color: deeppink; */
+}
+
+main form input[type="submit"]:hover{
+    background: #5c56dd;
+}
+
+/* .button #submit {
+    margin-right: 10rem;
+} */
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 30vh;
+    /* background: #FCF5F5; */
+    /* background-color: crimson; */
+}
+
+
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    max-width:60vw;
+    min-height: 30vh;
+    flex-wrap:wrap;
+    z-index:1;
+}
+
+.container .card {
+    position:relative;
+    width: 280px;
+    height: 400px;
+    margin:30px;
+    box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+    border-radius: 15px;
+    background:rgba(255,255,255,0.1);
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    /* background-color: darkseagreen; */
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align:center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    /* background-color: blueviolet; */
+}
+
+.container .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position:absolute;
+    top:-30px;
+    right:30px;
+    font-size:8em;
+    color:rgba(17, 13, 13, 0.05);
+    pointer-events:none;
+}
+
+.container .card .content p {
+    font-size:1em;
+    color: rgb(15, 11, 11);
+    font-weight:300;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+/* #imagem{
+    width: 250px;
+    height: 250px;
+} */
+
+
+
+.card {
+    padding: 3rem 2rem 1rem 2rem;
+    /* position: relative; */
+}
+
+#content {
+    /* background-color: orange; */
+    margin-top: 2rem;
+    width: 500px;
+    height: 500px;
+}
+
+h2 {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+p {
+    margin-top: 4rem;
+}
+
+.img {
+    width: 80%;
+    height: 95%;
+}
+
+img {
+    width: 120%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+}

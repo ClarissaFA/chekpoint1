@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural dos Sonhos</title>
+    <link rel="stylesheet" href="sytle copy.css">
+</head>
+
+<body>
+    <main>
+        <h1>Mural dos Sonhos</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="imgs/google1.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="imgs/facebook.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="imgs/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+        <div class="alternative">
+            <span>💜</span>
+        </div>
+        <div>
+            <form action="">
+                <label for="Title">
+                    <span>Sonho</span>
+                    <input type="text" id="title" name="Title" placeholder="Qual é seu sonho?">
+                </label>
+                <label for="Description">
+                    <span>Descrição</span>
+                    <input type="text" id="description" name="description" placeholder="Conta mais sobre esse sonho">
+                </label>
+                <label for="URL">
+                    <span>URL</span>
+                    <input type="url" id="url" name="URL" placeholder="Uma imagem pra ilustrar">
+                </label>
+                <div class=button>
+                    <label>
+                        <input type="submit" id="submit" value="ADICIONAR">
+                    </label>
+                    <label>
+                        <input type="submit" onclick="print()" id="imprimir" value="CRIAR MURAL">
+                    </label>
+                   
+                </div>
+
+            </form>
+        </div>
+    </main>
+        <div class="containerMural">
+            <div class="container">
+                <div class="card">
+                    <div id="content">
+                        <h2>Meu sonho</h2>
+                        <p>Um desejo do meu coração para o qual vou dar meu melhor em realizar</p>
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/132474/pexels-photo-132474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        </div img>
+                    </div>
+                </div>
+            </div>
+        </div containerMural>
+  
+    <script src="appNovo.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+
+</body>
+
+</html>
